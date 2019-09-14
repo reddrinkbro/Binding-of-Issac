@@ -1,0 +1,218 @@
+#pragma once
+//지형 속정 지정
+#define ATTR_NONE				0x00000000
+#define ATTR_UNMOVE_WALL1		0x00000001
+#define ATTR_UNMOVE_WALL2		0x00000002
+#define ATTR_BLOCK_NO_BREAK		0x00000003
+#define ATTR_BLOCK_BREAK		0x00000004
+#define ATTR_DOOR_UP			0x00000005
+#define ATTR_DOOR_DOWN			0x00000006
+#define ATTR_DOOR_LEFT			0x00000007
+#define ATTR_DOOR_RIGHT			0x00000008
+#define ATTR_MONSTER_ATTACKFLY	0x00000009
+#define ATTR_MONSTER_GAPER		0x00000010
+#define ATTR_MONSTER_HORF		0x00000011
+#define ATTR_MONSTER_CHARGER	0x00000012
+#define ATTR_MONSTER_LEVEL2FLY	0x00000013
+#define ATTR_MONSTER_BLUBBER	0x00000014
+#define ATTR_MONSTER_CLOTTY		0x00000015
+#define ATTR_MONSTER_TUMOR		0x00000016
+#define ATTR_STONE				0x00000017
+#define ATTR_SPIKE				0x00000018
+#define ATTR_SPIDERWEB			0x00000019
+#define ATTR_BOSS_DOOR_UP		0x00000020
+#define ATTR_BOSS_DOOR_DOWN		0x00000021
+#define ATTR_BOSS_DOOR_LEFT		0x00000022
+#define ATTR_BOSS_DOOR_RIGHT	0x00000023
+#define ATTR_EXIT				0x00000024
+#define ATTR_POOP1				0x00000025
+#define ATTR_POOP2				0x00000026
+//지형
+enum TERRAIN
+{
+	TR_NONE_BASE,
+	TR_BASEMENT,
+	TR_DICEROOM,
+	TR_CAVE,
+	TR_DEPTHS,
+	TR_NECROPOLIS,
+	TR_SECRETROOM,
+	TR_END
+};
+//타일
+enum TERRAINTILE
+{
+	T_NONE,
+	T_TILE,
+	T_WALL1,
+	T_WALL2
+};
+//오브젝트
+enum OBJECT
+{
+	OBJ_BLOCK,
+	OBJ_BLOCK2,
+	OBJ_SPIKE,
+	OBJ_SPIDERWEB,
+	OBJ_STONE,
+	OBJ_NONE
+};
+enum FRAMEOBJECT
+{
+	FRAMEOBJ_BARREL,
+	FRAMEOBJ_CHEST,
+	FRAMEOBJ_FIREWOOD,
+	FRAMEOBJ_SPIKE1,
+	FRAMEOBJ_SPIKE2,
+	FRAMEOBJ_POOP1,
+	FRAMEOBJ_POOP2,
+	FRAMEOBJ_HOLE,
+	FRAMEOBJ_NONE
+};
+enum DOOROBJECT
+{
+	DOOR_NONE,
+	DOOR_UP,
+	DOOR_DOWN,
+	DOOR_LEFT,
+	DOOR_RIGHT,
+	SHOP_DOOR_UP,
+	SHOP_DOOR_DOWN,
+	SHOP_DOOR_LEFT,
+	SHOP_DOOR_RIGHT,
+	BOSS_DOOR_UP,
+	BOSS_DOOR_DOWN,
+	BOSS_DOOR_LEFT,
+	BOSS_DOOR_RIGHT,
+};
+enum FRAMESTATE
+{
+	FRAMESTATE_NONE,
+	FRAMESTATE_ON,
+	FRAMESTATE_OFF
+};
+enum PROPS
+{
+	PROPS_NONE,
+	PROPS_END1,
+	PROPS_END2
+};
+
+enum MONSTER
+{
+	MONSTER_NONE,
+	MONSTER_ATTACKFLY,
+	MONSTER_GAPER,
+	MONSTER_HORF,
+	MONSTER_HOPPER,
+	MONSTER_CHARGER,
+	MONSTER_LEVEL2FLY,
+	MONSTER_BLUBBER,
+	MONSTER_CLOTTY,
+	MONSTER_TUMOR,
+	MONSTER_DUKEOFFLIES,
+	MONSTER_MONSTRO,
+	MONSTER_MEGAMAW
+};
+enum ITEM
+{
+	ITEM_NONE,
+	ITEM_COIN,
+	ITEM_KEY,
+	ITEM_BOMB,
+	ITEM_HP,
+	ITEM_PILL_ATKDOWN,
+	ITEM_PILL_SPEEDUP,
+	ITEM_PILL_ATKUP,
+	ITEM_PILL_SPEEDDOWN,
+	ITEM_FAMILIAR,
+	ITEM_OUIJABOARD,
+	ITEM_PENTAGRAM
+};
+
+enum BOSSSELECT
+{
+	BOSSSELECT_NONE,
+	BOSSSELECT_DUKEOFFLLIES,
+	BOSSSELECT_MONSTRO,
+	BOSSSELECT_MEGAMAW
+};
+//위치좌표
+struct position
+{
+	float x;
+	float y;
+};
+
+
+//타일구조체
+struct tagTile
+{
+	TERRAIN terrain;
+	TERRAINTILE tile;
+	OBJECT obj;
+	FRAMEOBJECT frameObj;
+	PROPS props;
+	DOOROBJECT doorObj;
+	FRAMESTATE framestate;
+	MONSTER monster;
+	ITEM item;
+	RECT rc;
+	position mosterPos;
+	position itemPos;
+	position objectPos;
+	position doorPos;
+	int terrainFrameX;
+	int terrainFrameY;
+	int objFrameX;
+	int objFrameY;
+	int frameObjFrameX;
+	int frameObjFrameY;
+	int propsFrameX;
+	int propsFrameY;
+	int doorObjFrameX;
+	int doorObjFrameY;
+	int monsterFrameX;
+	int monsterFrameY;
+	int itemFrameX;
+	int itemFrameY;
+};
+
+struct tagPropsTile
+{
+	PROPS props;
+	RECT rc;
+	int propsFrameX;
+	int propsFrameY;
+};
+
+//이미지 타일 구조체
+struct tagSampleTile
+{
+	RECT rcTile;
+	int terrainFrameX;
+	int terrainFrameY;
+};
+
+//현재 타일 구조체
+struct tagCurrentTile
+{
+	int x;
+	int y;
+};
+
+struct tagRoom
+{
+	RECT rc;
+	int sliceX;
+	int sliceY;
+};
+
+struct tagSampleRoom
+{
+	tagRoom room;
+	image* img;
+	RECT rc;
+	int x;
+	int y;
+};

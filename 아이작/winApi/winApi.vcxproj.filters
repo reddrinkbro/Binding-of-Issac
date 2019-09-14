@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="매니져">
+      <UniqueIdentifier>{45fc7e26-585a-434a-843e-e459e46be338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="메인게임">
+      <UniqueIdentifier>{e5e7106c-c557-4f2a-bf2f-362d037f9df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{de59bd84-490f-4de3-b2d7-ca1c9eac4440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\타이머">
+      <UniqueIdentifier>{26cd077e-757e-4ad7-a19a-732334387876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\게임노드">
+      <UniqueIdentifier>{c74581e2-587b-42c6-b090-558f511f1e4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\stdafx">
+      <UniqueIdentifier>{06a3d718-c25a-4a79-8877-9330efad880c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\이미지">
+      <UniqueIdentifier>{60422429-1dd3-46ec-8b7f-88632224d0eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\프로그래스 바">
+      <UniqueIdentifier>{1f3921e4-c877-4df3-bca3-3c86de7df3bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\유틸">
+      <UniqueIdentifier>{e75bf56a-db97-4fd2-8479-b6dfb045232b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\이펙트">
+      <UniqueIdentifier>{20a4ac81-1e2a-46f8-a1c6-e7dfe4dd0732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\애니메이션">
+      <UniqueIdentifier>{a7d5d296-d5d1-4535-b878-533478909d6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\INI">
+      <UniqueIdentifier>{beef2530-7bd7-4bde-be00-4d2b0b61627c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\로딩">
+      <UniqueIdentifier>{95b0a7f0-452d-4fbb-b791-1a871bcf444c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\픽셀 충돌">
+      <UniqueIdentifier>{bd5cef6a-77c9-4a6c-86c4-4c1d2ccef12e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{2481163d-81f2-4f20-883d-3ba0e580882d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bullet">
+      <UniqueIdentifier>{3a0d2515-cb9f-49e6-99d2-7d9b62f3d508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player">
+      <UniqueIdentifier>{5eb8534a-b03f-4935-99ce-9e74dc2c594f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapTool">
+      <UniqueIdentifier>{cc276b11-cd90-4fa8-a727-7a79b1ed9a10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="enemy">
+      <UniqueIdentifier>{70979bd1-27e8-4b3e-8ffa-3ff85b0f46b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="enemy\minion">
+      <UniqueIdentifier>{710f24cb-f3dd-40ca-a4d8-092930ae79ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player\UI">
+      <UniqueIdentifier>{40df23b0-b0ba-407d-92b1-132e1e370d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item">
+      <UniqueIdentifier>{59c42b72-3bf5-481e-9e54-62a067b4eb2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player\Familiar">
+      <UniqueIdentifier>{69470189-4f98-406e-8f20-5fefc4ee1513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item\알약">
+      <UniqueIdentifier>{5d95fcfd-d9e4-47ef-a091-bcb5036c1dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item\장착아이템">
+      <UniqueIdentifier>{a57faaab-7c6f-49b0-a5c1-5a3a8aca3117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item\기본아이템">
+      <UniqueIdentifier>{e6c2e987-953e-4b70-a0a5-c45bb7b45861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object">
+      <UniqueIdentifier>{2ca523b6-f09f-49bd-a708-877b91aacfcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="enemy\boss">
+      <UniqueIdentifier>{c11c3a55-f50d-4db9-8d86-ad41bc90ce00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shadow">
+      <UniqueIdentifier>{564a0908-8fdd-4875-bfb6-6d625bd5b24e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="keyManager.cpp">
+      <Filter>매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="mainGame.cpp">
+      <Filter>메인게임</Filter>
+    </ClCompile>
+    <ClCompile Include="winMain.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp">
+      <Filter>API\이미지</Filter>
+    </ClCompile>
+    <ClCompile Include="imageManager.cpp">
+      <Filter>매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>API\유틸</Filter>
+    </ClCompile>
+    <ClCompile Include="timeManager.cpp">
+      <Filter>매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>API\타이머</Filter>
+    </ClCompile>
+    <ClCompile Include="gameNode.cpp">
+      <Filter>API\게임노드</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>API\stdafx</Filter>
+    </ClCompile>
+    <ClCompile Include="progressBar.cpp">
+      <Filter>API\프로그래스 바</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>API\애니메이션</Filter>
+    </ClCompile>
+    <ClCompile Include="txtDataManager.cpp">
+      <Filter>매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="iniData.cpp">
+      <Filter>API\INI</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneManager.cpp">
+      <Filter>매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="loading.cpp">
+      <Filter>API\로딩</Filter>
+    </ClCompile>
+    <ClCompile Include="pixelCollision.cpp">
+      <Filter>API\픽셀 충돌</Filter>
+    </ClCompile>
+    <ClCompile Include="soundManager.cpp">
+      <Filter>매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="effect.cpp">
+      <Filter>API\이펙트</Filter>
+    </ClCompile>
+    <ClCompile Include="effectManager.cpp">
+      <Filter>매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="cameraManager.cpp">
+      <Filter>매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="mapTool.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="tilesPaper.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="tileCheck.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="tileRender.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="tileDraw.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="tileSetUp.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="setMap.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="erase.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="shopMap.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="menuScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="mapToolScene.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="miniMap.cpp">
+      <Filter>mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="dungeonGameScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="dungeonMap.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="objectCollision.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="doorCollision.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="enemyManager.cpp">
+      <Filter>enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="frowningGaper.cpp">
+      <Filter>enemy\minion</Filter>
+    </ClCompile>
+    <ClCompile Include="minion.cpp">
+      <Filter>enemy\minion</Filter>
+    </ClCompile>
+    <ClCompile Include="clotty.cpp">
+      <Filter>enemy\minion</Filter>
+    </ClCompile>
+    <ClCompile Include="horf.cpp">
+      <Filter>enemy\minion</Filter>
+    </ClCompile>
+    <ClCompile Include="attackFly.cpp">
+      <Filter>enemy\minion</Filter>
+    </ClCompile>
+    <ClCompile Include="level2Fly.cpp">
+      <Filter>enemy\minion</Filter>
+    </ClCompile>
+    <ClCompile Include="blubber.cpp">
+      <Filter>enemy\minion</Filter>
+    </ClCompile>
+    <ClCompile Include="charger.cpp">
+      <Filter>enemy\minion</Filter>
+    </ClCompile>
+    <ClCompile Include="playerUI.cpp">
+      <Filter>player\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="enemyCollision.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="collision.cpp">
+      <Filter>enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletCollision.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="tumor.cpp">
+      <Filter>enemy\minion</Filter>
+    </ClCompile>
+    <ClCompile Include="itemManager.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletEnemyCollision.cpp">
+      <Filter>enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="objectEnemyCollision.cpp">
+      <Filter>enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="tileEnemyCollision.cpp">
+      <Filter>enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="playerItemCollision.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="playerExplosionCollision.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="enemyExplosionCollision.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="objectExplosionCollision.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="familiar.cpp">
+      <Filter>player\Familiar</Filter>
+    </ClCompile>
+    <ClCompile Include="pillATKUP.cpp">
+      <Filter>item\알약</Filter>
+    </ClCompile>
+    <ClCompile Include="pillSPEEDUP.cpp">
+      <Filter>item\알약</Filter>
+    </ClCompile>
+    <ClCompile Include="ghostBaby.cpp">
+      <Filter>item\장착아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="ouijaboard.cpp">
+      <Filter>item\장착아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="pentagram.cpp">
+      <Filter>item\장착아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="bomb.cpp">
+      <Filter>item\기본아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="coin.cpp">
+      <Filter>item\기본아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="healthPoint.cpp">
+      <Filter>item\기본아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="pillATKDOWN.cpp">
+      <Filter>item\알약</Filter>
+    </ClCompile>
+    <ClCompile Include="pillSPEEDDOWN.cpp">
+      <Filter>item\알약</Filter>
+    </ClCompile>
+    <ClCompile Include="itemGet.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="key.cpp">
+      <Filter>item\기본아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="treasureChest.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="objectManager.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="setMinion.cpp">
+      <Filter>enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="setItem.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="dukeofflies.cpp">
+      <Filter>enemy\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="monstro.cpp">
+      <Filter>enemy\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="megamaw.cpp">
+      <Filter>enemy\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="optionScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="soundVolume.cpp">
+      <Filter>매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="addBlood.cpp">
+      <Filter>enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="spike.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="door.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="cutScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="shadow.cpp">
+      <Filter>shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="exitObject.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="poop.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="setObject.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="commonMacroFiunction.h">
+      <Filter>API\유틸</Filter>
+    </ClInclude>
+    <ClInclude Include="randomFunction.h">
+      <Filter>API\유틸</Filter>
+    </ClInclude>
+    <ClInclude Include="keyManager.h">
+      <Filter>매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="mainGame.h">
+      <Filter>메인게임</Filter>
+    </ClInclude>
+    <ClInclude Include="singletonBase.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>API\이미지</Filter>
+    </ClInclude>
+    <ClInclude Include="imageManager.h">
+      <Filter>매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>API\유틸</Filter>
+    </ClInclude>
+    <ClInclude Include="timeManager.h">
+      <Filter>매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>API\타이머</Filter>
+    </ClInclude>
+    <ClInclude Include="gameNode.h">
+      <Filter>API\게임노드</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>API\stdafx</Filter>
+    </ClInclude>
+    <ClInclude Include="progressBar.h">
+      <Filter>API\프로그래스 바</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>API\애니메이션</Filter>
+    </ClInclude>
+    <ClInclude Include="txtDataManager.h">
+      <Filter>매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="iniData.h">
+      <Filter>API\INI</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneManager.h">
+      <Filter>매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="loading.h">
+      <Filter>API\로딩</Filter>
+    </ClInclude>
+    <ClInclude Include="pixelCollision.h">
+      <Filter>API\픽셀 충돌</Filter>
+    </ClInclude>
+    <ClInclude Include="soundManager.h">
+      <Filter>매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="effect.h">
+      <Filter>API\이펙트</Filter>
+    </ClInclude>
+    <ClInclude Include="effectManager.h">
+      <Filter>매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="cameraManager.h">
+      <Filter>매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="mapTool.h">
+      <Filter>mapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="tilesPaper.h">
+      <Filter>mapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="menuScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="mapToolScene.h">
+      <Filter>mapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="tileNode.h">
+      <Filter>mapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="miniMap.h">
+      <Filter>mapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="dungeonGameScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="dungeonMap.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="enemyManager.h">
+      <Filter>enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="frowningGaper.h">
+      <Filter>enemy\minion</Filter>
+    </ClInclude>
+    <ClInclude Include="minion.h">
+      <Filter>enemy\minion</Filter>
+    </ClInclude>
+    <ClInclude Include="clotty.h">
+      <Filter>enemy\minion</Filter>
+    </ClInclude>
+    <ClInclude Include="horf.h">
+      <Filter>enemy\minion</Filter>
+    </ClInclude>
+    <ClInclude Include="attackFly.h">
+      <Filter>enemy\minion</Filter>
+    </ClInclude>
+    <ClInclude Include="level2Fly.h">
+      <Filter>enemy\minion</Filter>
+    </ClInclude>
+    <ClInclude Include="blubber.h">
+      <Filter>enemy\minion</Filter>
+    </ClInclude>
+    <ClInclude Include="charger.h">
+      <Filter>enemy\minion</Filter>
+    </ClInclude>
+    <ClInclude Include="playerUI.h">
+      <Filter>player\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="tumor.h">
+      <Filter>enemy\minion</Filter>
+    </ClInclude>
+    <ClInclude Include="itemManager.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="familiar.h">
+      <Filter>player\Familiar</Filter>
+    </ClInclude>
+    <ClInclude Include="monsterData.h">
+      <Filter>enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="itemData.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="pillATKUP.h">
+      <Filter>item\알약</Filter>
+    </ClInclude>
+    <ClInclude Include="pillSPEEDUP.h">
+      <Filter>item\알약</Filter>
+    </ClInclude>
+    <ClInclude Include="ghostBaby.h">
+      <Filter>item\장착아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="ouijaboard.h">
+      <Filter>item\장착아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="pentagram.h">
+      <Filter>item\장착아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="bomb.h">
+      <Filter>item\기본아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="coin.h">
+      <Filter>item\기본아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="healthPoint.h">
+      <Filter>item\기본아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="pillATKDOWN.h">
+      <Filter>item\알약</Filter>
+    </ClInclude>
+    <ClInclude Include="pillSPEEDDOWN.h">
+      <Filter>item\알약</Filter>
+    </ClInclude>
+    <ClInclude Include="key.h">
+      <Filter>item\기본아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="treasureChest.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="objectManager.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="objectData.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="dukeofflies.h">
+      <Filter>enemy\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="monstro.h">
+      <Filter>enemy\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="megamaw.h">
+      <Filter>enemy\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="optionScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="soundVolume.h">
+      <Filter>매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="spike.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="door.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="cutScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="shadow.h">
+      <Filter>shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="exitObject.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="poop.h">
+      <Filter>object</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
