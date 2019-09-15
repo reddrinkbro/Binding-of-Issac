@@ -59,4 +59,5 @@
 두 가지 이미지를 사용하여서 둘 중 위에 있는 이미지의 width 값을 줄여서 체력이 감소하는 형식으로 구현했습니다.
 
 ## 관련 영상
-https://youtu.be/Fti07xaYiKc
+본 게임 : https://youtu.be/Fti07xaYiKc
+맵툴 : https://youtu.be/IJ9BTU4f2Og
